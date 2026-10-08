@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070c12">
+  <meta name="description" content="SYNTRA 2030 — your personal digital twin, ready to model the day ahead.">
+  <title>SYNTRA 2030 — Digital Twin</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient-grid" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <main>
+    <section class="landing" id="landing" aria-labelledby="hero-title">
+      <div class="landing-top"><a class="wordmark" href="#landing">SYNTRA<span>2030</span></a><span class="top-state"><i></i> PERSONAL SYSTEM / 01</span></div>
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div><div class="hero-orbit orbit-two" aria-hidden="true"></div>
+      <div class="hero-core" aria-hidden="true"><div class="core-glow"></div><span class="core-cross">✳</span></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> YOUR PERSONAL DIGITAL TWIN</p>
+        <h1 id="hero-title">YOUR DIGITAL TWIN<br><span>IS READY.</span></h1>
+        <p class="hero-subtitle">Understand your present. <span>Simulate your future.</span></p>
+        <button class="button button-primary" id="initialize"><span>INITIALIZE SYNTRA</span><span class="button-arrow">↗</span></button>
+      </div>
+      <div class="hero-foot"><span>HUMAN × INTELLIGENCE</span><span>EST. 2030 &nbsp; / &nbsp; SYSTEMS NOMINAL</span></div>
+      <div class="scanline" aria-hidden="true"></div>
+    </section>
+
+    <section class="dashboard" id="dashboard" aria-label="Digital twin dashboard" hidden>
+      <header class="app-header">
+        <a class="wordmark" href="#overview">SYNTRA<span>2030</span></a>
+        <nav class="main-nav" aria-label="Main navigation"><a class="active" href="#overview">Dashboard</a><a href="#metrics">Metrics</a><a href="#simulation">Simulation</a><a href="#insights">Insights</a><a href="#system">System</a></nav>
+        <div class="online"><i></i><span>DIGITAL TWIN ONLINE</span></div>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      </header>
+
+      <div class="dashboard-content">
+        <section class="welcome-row" id="overview">
+          <div><p class="eyebrow">THURSDAY, 08 OCTOBER 2030 <span class="live-dot"></span> LIVE SYNC</p><h2>GOOD EVENING, <span>USER</span></h2><p class="muted">Digital Twin synchronization complete.</p></div>
+          <div class="sync-card glass"><div class="sync-ring" aria-label="Synchronization status 94 percent"><div><strong>94<span>%</span></strong><small>SYNC STATUS</small></div></div><div class="sync-detail"><span class="status-label">NEURAL LINK <b>STABLE</b></span><span class="sync-caption">Last sync <b>just now</b></span></div></div>
+        </section>
+
+        <section class="section-block" id="metrics">
+          <div class="section-heading"><div><p class="eyebrow">01 / CURRENT STATE</p><h3>PERSONAL METRICS</h3></div><span class="section-note">LIVE FROM YOUR DIGITAL TWIN <i>↗</i></span></div>
+          <div class="metric-grid">
+            <article class="metric-card glass" data-metric="energy"><div class="metric-top"><span class="metric-icon">ϟ</span><span class="metric-index">01</span></div><div class="metric-value"><strong>82</strong><span>%</span></div><p class="metric-name">ENERGY</p><div class="meter"><span style="--value:82%"></span></div><small>OPTIMAL RANGE</small></article>
+            <article class="metric-card glass" data-metric="focus"><div class="metric-top"><span class="metric-icon">◎</span><span class="metric-index">02</span></div><div class="metric-value"><strong>91</strong><span>%</span></div><p class="metric-name">FOCUS</p><div class="meter"><span style="--value:91%"></span></div><small>HIGH CLARITY</small></article>
+            <article class="metric-card glass" data-metric="mood"><div class="metric-top"><span class="metric-icon">⌁</span><span class="metric-index">03</span></div><div class="metric-value"><strong>76</strong><span>%</span></div><p class="metric-name">MOOD</p><div class="meter"><span style="--value:76%"></span></div><small>STEADY STATE</small></article>
+            <article class="metric-card glass" data-metric="sleep"><div class="metric-top"><span class="metric-icon">☾</span><span class="metric-index">04</span></div><div class="metric-value"><strong>88</strong><span>%</span></div><p class="metric-name">SLEEP</p><div class="meter"><span style="--value:88%"></span></div><small>WELL RESTED</small></article>
+            <article class="metric-card glass productivity-card" data-metric="productivity"><div class="metric-top"><span class="metric-icon">↗</span><span class="metric-index">05</span></div><div class="metric-value"><strong>87</strong><span>%</span></div><p class="metric-name">PRODUCTIVITY</p><div class="meter"><span style="--value:87%"></span></div><small>PROJECTED OUTPUT</small></article>
+          </div>
+        </section>
+
+        <div class="two-column">
+          <section class="section-block controls-panel glass" id="system">
+            <div class="section-heading"><div><p class="eyebrow">02 / TWIN PARAMETERS</p><h3>ADJUST YOUR STATE</h3></div><span class="live-tag"><i></i> REAL TIME</span></div>
+            <p class="panel-intro">Tune your inputs and watch your twin adapt.</p>
+            <div class="sliders">
+              <label class="slider-row"><span>ENERGY</span><input type="range" min="0" max="100" value="82" data-control="energy" aria-label="Energy"><output>82%</output></label>
+              <label class="slider-row"><span>FOCUS</span><input type="range" min="0" max="100" value="91" data-control="focus" aria-label="Focus"><output>91%</output></label>
+              <label class="slider-row"><span>MOOD</span><input type="range" min="0" max="100" value="76" data-control="mood" aria-label="Mood"><output>76%</output></label>
+              <label class="slider-row"><span>SLEEP</span><input type="range" min="0" max="100" value="88" data-control="sleep" aria-label="Sleep"><output>88%</output></label>
+              <label class="slider-row"><span>WORKLOAD</span><input type="range" min="0" max="100" value="62" data-control="workload" aria-label="Workload"><output>62%</output></label>
+            </div>
+            <div class="computed-stats"><div><span>STRESS INDEX</span><strong id="stress-value">28<small>%</small></strong><i class="stress-track"><b id="stress-bar"></b></i></div><div><span>PRODUCTIVITY</span><strong id="productivity-value">87<small>%</small></strong><i class="stress-track"><b id="productivity-bar"></b></i></div></div>
+          </section>
+
+          <section class="section-block forecast-panel glass" id="insights">
+            <div class="section-heading"><div><p class="eyebrow">03 / PREDICTIVE MODEL</p><h3>24-HOUR FORECAST</h3></div><span class="forecast-badge">NEXT CYCLE</span></div>
+            <p class="panel-intro">Your current rhythm, translated into a day ahead.</p>
+            <div class="forecast-list">
+              <div class="forecast-row"><time>09:00</time><span>PEAK FOCUS</span><div class="forecast-track"><i style="--bar:94%"></i></div><b>94</b></div>
+              <div class="forecast-row"><time>12:30</time><span>HIGH PRODUCTIVITY</span><div class="forecast-track"><i style="--bar:82%"></i></div><b>82</b></div>
+              <div class="forecast-row"><time>15:00</time><span>ENERGY DROP</span><div class="forecast-track"><i style="--bar:54%"></i></div><b>54</b></div>
+              <div class="forecast-row"><time>19:00</time><span>RECOVERY</span><div class="forecast-track"><i style="--bar:76%"></i></div><b>76</b></div>
+              <div class="forecast-row"><time>22:00</time><span>REST MODE</span><div class="forecast-track"><i style="--bar:88%"></i></div><b>88</b></div>
+            </div>
+            <p class="forecast-foot"><span>◉</span> Forecast updates as your twin changes.</p>
+          </section>
+        </div>
+
+        <section class="simulation-section glass" id="simulation">
+          <div class="sim-visual" aria-hidden="true"><div class="sim-orbit sim-orbit-a"></div><div class="sim-orbit sim-orbit-b"></div><div class="sim-sphere">✳</div><span class="sim-coordinate">T+24H<br>MODEL 04.8</span></div>
+          <div class="sim-copy"><p class="eyebrow">04 / POSSIBILITY ENGINE</p><h3>FUTURE<br><span>SIMULATION</span></h3><p class="muted">Simulate how your current choices may affect your next 24 hours.</p><button class="button button-primary" id="start-simulation"><span>START SIMULATION</span><span class="button-arrow">↗</span></button></div>
+          <div class="sim-meta"><span>MODEL ACCURACY</span><strong>94.2<small>%</small></strong><span>HORIZON &nbsp; / &nbsp; 24 HOURS</span></div>
+        </section>
+
+        <section class="section-block whatif-section">
+          <div class="section-heading"><div><p class="eyebrow">05 / BRANCHING TIMELINES</p><h3>WHAT IF?</h3></div><span class="section-note">EXPLORE AN ALTERNATE YOU</span></div>
+          <div class="whatif-layout"><div class="whatif-options"><button class="whatif-button" data-scenario="sleep"><span class="scenario-symbol">☾</span><span><b>SLEEP 2 HOURS MORE</b><small>Extend your recovery window</small></span><span class="scenario-arrow">↗</span></button><button class="whatif-button" data-scenario="workload"><span class="scenario-symbol">⌁</span><span><b>INCREASE WORKLOAD</b><small>Push output to its upper limit</small></span><span class="scenario-arrow">↗</span></button><button class="whatif-button" data-scenario="deep"><span class="scenario-symbol">◎</span><span><b>DEEP WORK SESSION</b><small>Protect a block for focused work</small></span><span class="scenario-arrow">↗</span></button></div><div class="scenario-result glass" id="scenario-result" aria-live="polite"><div class="result-top"><span class="result-orb">✳</span><span class="forecast-badge">PROJECTED OUTCOME</span></div><p class="scenario-placeholder">Choose a scenario<br>to preview your future.</p><div class="result-stats" hidden><div><span>PRODUCTIVITY</span><b id="scenario-productivity">—</b></div><div><span>STRESS INDEX</span><b id="scenario-stress">—</b></div></div><p class="result-note" id="scenario-note">Your digital twin is standing by.</p></div></div>
+        </section>
+
+        <footer class="app-footer"><a class="wordmark" href="#overview">SYNTRA<span>2030</span></a><span>HUMAN × INTELLIGENCE</span><span>ALL SYSTEMS NOMINAL <i></i></span></footer>
+      </div>
+    </section>
+  </main>
+
+  <div class="simulation-overlay" id="simulation-overlay" role="dialog" aria-modal="true" aria-label="Future simulation" hidden>
+    <div class="simulation-frame"><div class="sim-loader-orbit"><div class="loader-core">✳</div></div><p class="eyebrow" id="sim-step-label">SYNTRA / FUTURE MODEL</p><h2 id="sim-step">INITIALIZING...</h2><div class="loading-track"><i id="loading-progress"></i></div><span class="loading-percent" id="loading-percent">00%</span><button class="button button-secondary" id="close-simulation" hidden>RETURN TO DASHBOARD <span>↗</span></button></div>
+  </div>
+</body>
+</html>
